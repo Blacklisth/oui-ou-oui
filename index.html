@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une Question Importante...</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Écran de chargement / Introduction -->
+    <div class="intro-screen" id="introScreen">
+        <div class="intro-content">
+            <div class="loading-hearts">
+                <span class="heart">💝</span>
+                <span class="heart">💝</span>
+                <span class="heart">💝</span>
+            </div>
+            <h2 class="intro-text">Préparation d'une question importante...</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p class="percentage" id="percentage">0%</p>
+        </div>
+    </div>
+
+    <!-- Écran principal avec la question -->
+    <div class="main-screen" id="mainScreen">
+        <div class="background-animation">
+            <div class="floating-heart"></div>
+            <div class="floating-heart"></div>
+            <div class="floating-heart"></div>
+            <div class="floating-heart"></div>
+            <div class="floating-heart"></div>
+        </div>
+
+        <!-- Compte à rebours (optionnel) -->
+        <div class="countdown-section" id="countdownSection">
+            <p class="countdown-label">Temps restant avant la Saint-Valentin</p>
+            <div class="countdown-display">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-unit">Jours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-unit">Heures</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-unit">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-unit">Secondes</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zone de la question -->
+        <div class="question-container">
+            <div class="question-card">
+                <div class="question-icon">💍</div>
+                
+                <h1 class="question-title" id="questionTitle">
+                    Veux-tu être ma Valentine ?
+                </h1>
+                
+                <p class="question-description" id="questionDescription">
+                    Cette question ne nécessite qu'une seule réponse possible...
+                </p>
+
+                <div class="buttons-container" id="buttonsContainer">
+                    <button class="btn btn-yes" id="btnYes">
+                        OUI ! 💖
+                    </button>
+                    <button class="btn btn-no" id="btnNo">
+                        Euh... 🤔
+                    </button>
+                </div>
+
+                <p class="hint-text" id="hintText"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Écran de célébration final -->
+    <div class="celebration-screen" id="celebrationScreen">
+        <div class="celebration-content">
+            <div class="explosion-container" id="explosionContainer"></div>
+            
+            <div class="celebration-message">
+                <h1 class="celebration-title">Je savais que tu dirais oui ! 💕</h1>
+                <p class="celebration-text" id="celebrationText">
+                    Tu viens de rendre cette journée encore plus spéciale. 
+                    Je t'aime plus que tout au monde !
+                </p>
+                
+                <div class="celebration-hearts">
+                    <span>❤️</span>
+                    <span>💖</span>
+                    <span>💕</span>
+                    <span>💗</span>
+                    <span>💓</span>
+                </div>
+
+                <button class="restart-btn" id="restartBtn">
+                    Revivre ce moment magique ✨
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
